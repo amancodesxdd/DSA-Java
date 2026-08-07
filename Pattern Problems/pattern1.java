@@ -6,8 +6,8 @@ public class pattern1 {
         System.out.print("Enter number of rows: ");
         int n = sc.nextInt();
 
-        for(int i=n; i>=1; i--){
-            for(int j=1; j<=i; j++){
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
                 System.out.print("*");
             }
             System.out.println();
