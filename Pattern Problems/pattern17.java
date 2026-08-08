@@ -6,13 +6,13 @@ public class pattern17 {
         System.out.print("Enter number of rows: ");
         int n = sc.nextInt();
 
-        for(int i=1; i<=n; i++){
+        for(int i=0; i<n; i++){
             for(int k=1; k<=n-i; k++){
                 System.out.print(" ");
             }
             char c = 'A';
             int breakpoint = (2*i+1)/2;
-            for(int j=1; j<2*i; j++){
+            for(int j=1; j<=2*i+1; j++){
                 System.out.print(c);
                 if(j <= breakpoint){
                     c ++;
