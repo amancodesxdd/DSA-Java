@@ -7,7 +7,8 @@ public class pattern16 {
         int n = sc.nextInt();
 
         for(int i=0; i<n; i++){
-            for(char c=(char)('A'+i); c<=(char)('A'); c++){
+            for(int j=0;j<=i;j++){
+                char c = (char) ('A' + i);
                 System.out.print(c);
             }
             System.out.println();
