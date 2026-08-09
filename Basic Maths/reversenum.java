@@ -8,7 +8,7 @@ public class reversenum {
 
     int newnum = 0;
 
-    while(num>0){
+    while(num!=0){
         int temp = num%10;
         newnum = newnum*10+temp;
         num = num/10;
