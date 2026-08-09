@@ -24,5 +24,6 @@ public class armstrong {
         }else{
             System.out.println("Not Armstrong");
         }
+        sc.close();
     }
 }
