@@ -7,7 +7,7 @@ public class name_heightsort {
         for(int i=0; i<=height.length-2;i++){
             int max = i;
 
-            for(int j = i; j<=height.length-1;j++){
+            for(int j = i+1; j<=height.length-1;j++){
                 if(height[j]>height[max]){
                     max=j;
                 }
@@ -26,7 +26,7 @@ public class name_heightsort {
             System.out.print(i + " ");
         }
         System.out.println();
-        
+
         System.out.print("Sorted Heights: ");
 
         for (int i : height) {
