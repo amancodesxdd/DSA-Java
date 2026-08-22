@@ -1,6 +1,6 @@
 package Sorting;
 
-public class quicksort2 {
+public class quicksort {
     public static void qs(int[] arr, int low, int high) {
         if(low<high){
             int pindex = f(arr, low, high);
