@@ -12,12 +12,11 @@ public class checksorted {
         
     }
     public static boolean isSorted(int[] arr) {
-        boolean isSorted = true;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
-                isSorted = false;
+                return false;
             }
         }
-        return isSorted;
+        return true;
     }
 }
