@@ -10,4 +10,9 @@ public class linearsearch {
         }
         return -1;
     }
+    public static void main(String[] args) {
+        int[] arr = {2,4,6,1,8};
+
+        System.out.println(ls(arr, 4));
+    }
 }
