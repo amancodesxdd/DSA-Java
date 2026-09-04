@@ -1,4 +1,3 @@
-package Arrays;
 
 public class removeduplicate {
     public static int duplicate(int[] arr){

@@ -1,4 +1,3 @@
-package Arrays;
 
 public class linearsearch {
     public static int ls(int[] arr, int k){
