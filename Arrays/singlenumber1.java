@@ -38,6 +38,3 @@ public class singlenumber1 {
         System.out.println(single(nums));
     }
 }
-
-
-
