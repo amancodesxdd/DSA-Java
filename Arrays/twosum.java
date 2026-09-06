@@ -26,7 +26,7 @@
 import java.util.HashMap;
 
 public class twosum{
-    public static int[] twosum(int[] nums, int target){
+    public static int[] twosum1(int[] nums, int target){
         HashMap<Integer,Integer> map = new HashMap<>();
 
         for(int i = 0; i < nums.length; i ++){
@@ -43,7 +43,7 @@ public class twosum{
     public static void main(String[] args) {
         int[] nums = {1,6,2,10,3};
         
-        int[] arr = twosum(nums, 8);
+        int[] arr = twosum1(nums, 8);
 
         for (int i : arr) {
             System.out.print(i+ " ");
