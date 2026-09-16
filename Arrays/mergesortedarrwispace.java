@@ -24,7 +24,7 @@ public class mergesortedarrwispace {
         return nums1;
     }
     public static void main(String[] args) {
-        int[] nums1 = {-5, -2, 4, 5,0,0,0};
+        int[] nums1 = {-5, -2, 4, 5,0 ,0 ,0};
         int[] nums2 = {-3, 1, 8};
 
         int[] arr = merge(nums1, 4, nums2, 3);
