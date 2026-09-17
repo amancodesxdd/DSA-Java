@@ -1,10 +1,17 @@
-public class countinversion{
-    public static int merge(int[] nums,int low, int mid, int high){
-        int i = low;
-        int j = mid + 1;
+public class reversepairs{
+    public static int merge(int[] nums, int low, int mid,int  high) {
         int count = 0;
+        int j = mid + 1;
+        for (int i = low; i <= mid; i++) {
+            while(j <= high && nums[i] > 2L*nums[j]){
+                j++;
+            }
+            count += j - (mid + 1);
+        }
+        
+        int i = low;
+        j = mid + 1;
         int k = 0;
-
         int[] temp = new int[high - low + 1];
         
         while(i <= mid && j <= high){
@@ -15,7 +22,6 @@ public class countinversion{
             else{
                 temp[k] = nums[j];
                 j ++;
-                count = mid - i + 1;
             }
             k++;
         }
@@ -34,7 +40,7 @@ public class countinversion{
         }
         return count;
     }
-    public static int mergesort(int[] nums, int low, int high) {
+        public static int mergesort(int[] nums, int low, int high) {
         
         if(low>=high){
             return 0;
@@ -52,6 +58,6 @@ public class countinversion{
     }
     public static void main(String[] args) {
         int[] nums = {6,4,2,1,7};
-        System.out.print(mergesort(nums, 0, nums.length));
+        System.out.println(mergesort(nums, 0, nums.length-1));
     }
 }
