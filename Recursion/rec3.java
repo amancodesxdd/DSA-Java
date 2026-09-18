@@ -1,16 +1,14 @@
-package Recursion;
-import java.util.*;
-
-public class rec3 {
-    static Scanner sc = new Scanner(System.in);
-    static int n = sc.nextInt();
-    static void ntimes(){
-        for(int i = n; i >= 1; i--){
-            System.out.println(i);
+public class rec2 {
+    public static void ntimes(int n){
+        if(n == 0){
+            return;
         }
-    }
+        System.out.println(n);
+        ntimes(n-1);
+       
+ }
     public static void main(String[] args) {
-        ntimes();
+        ntimes(10);
     }
 }
 
