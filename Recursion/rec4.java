@@ -1,17 +1,12 @@
-package Recursion;
-import java.util.*;
-
-public class rec4 {
-    static Scanner sc = new Scanner(System.in);
-    static int n = sc.nextInt();
-    static int sum = 0;
-    static void ntimes(){
-        for(int i = 1; i <= n; i++){
-            sum = sum + i;
+public class rec4{
+    public static int sum(int n){
+        if(n < 1){
+            return 0;
         }
-        System.out.println("Sum: "+ sum);
+        return n + sum(n-1);
+        
     }
     public static void main(String[] args) {
-        ntimes();
+        System.out.println(sum(3));
     }
 }
